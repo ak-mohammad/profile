@@ -1,57 +1,69 @@
-# Mohammad Ammar - Professional Portfolio Website
+# Mohammad Ammar
 
-A highly aesthetic, premium, and responsive personal portfolio website built using **Jekyll** and custom modern **CSS**.
+### MBA Candidate | Marketing & Digital Marketing Specialist
+📍 Noida, India | 📧 mdammar6000@gmail.com | 🔗 github.com/ak-mohammad
 
-## 🚀 Quick Start (Local Testing)
+---
 
-This project has been set up with local Bundler binstubs. You can test and serve the site locally by running:
+## 🌟 Executive Summary
 
-```bash
-./bin/jekyll serve
-```
+Motivated and results-oriented BBA graduate currently pursuing an MBA from Maharshi Dayanand University (MDU), Rohtak. Possesses strong foundational knowledge of Marketing, Digital Marketing, Brand Management, Consumer Behavior, and Market Research. Skilled in developing digital marketing strategies, social media growth, search engine optimization (SEO), content marketing, online advertising (Google & Meta Ads), and data-driven decision-making. 
 
-Then open your browser and navigate to `http://localhost:4000`.
+An analytical thinker and quick learner with excellent communication, presentation, and leadership abilities, eager to drive growth and value for dynamic organizations.
 
-## 📁 Directory Structure
+---
 
-```text
-├── .github/workflows/
-│   └── jekyll.yml       # GitHub Actions deploy configuration
-├── _includes/
-│   ├── header.html      # Glassmorphism header and navigation
-│   └── footer.html      # Footer with social links
-├── _layouts/
-│   ├── default.html     # Base html wrapper with styling
-│   ├── page.html        # Simple page wrapper
-│   └── post.html        # Highly readable blog article wrapper
-├── _posts/
-│   └── 2026-07-10-power-of-integrated-digital-marketing.md  # Blog post
-├── assets/
-│   ├── css/
-│   │   └── style.css    # Premium style system (gradients, blobs)
-│   └── js/
-│       └── main.js      # Nav logic and scroll interactions
-├── _config.yml          # Jekyll configuration
-├── blog.html            # Blog archive list page
-├── Gemfile              # Local dependency definitions
-└── index.html           # Main portfolio homepage
-```
+## 🎯 Core Competencies & Expertise
 
-## 🛠️ GitHub Pages Deployment
+* **Digital Marketing Strategy**: Constructing comprehensive campaigns across SEO, search engine marketing (SEM), and social channels.
+* **SEO & Content Strategy**: On-Page/Off-Page optimization, keyword research, site visibility, and content strategy mapping.
+* **Performance Marketing**: Setting up Google Ads, Meta Ads (Facebook & Instagram), and analytics tracking.
+* **Brand & Consumer Insights**: Brand management, market research, analysis of consumer behavior, and marketing communications.
+* **Analytics & Tools**: Google Analytics, Google Search Console, Canva, Microsoft Excel, and PowerPoint.
 
-To put this site live on GitHub:
-1. Initialize Git in the `Portfolio/` directory:
-   ```bash
-   git init -b main
-   git add .
-   git commit -m "Initial portfolio commit"
-   ```
-2. Create a repository on GitHub (e.g., `portfolio`).
-3. Connect your local repository to GitHub and push:
-   ```bash
-   git remote add origin https://github.com/yourusername/portfolio.git
-   git push -u origin main
-   ```
-4. On GitHub, go to your repository **Settings > Pages**.
-5. Under **Build and deployment**, select **GitHub Actions** as the source.
-6. The included workflow `.github/workflows/jekyll.yml` will trigger, build your site, and deploy it to `https://yourusername.github.io/portfolio` in 10-30 seconds.
+---
+
+## 🎓 Academic Credentials
+
+### Master of Business Administration (MBA) – Marketing
+* **Institution**: Maharshi Dayanand University (MDU), Rohtak
+* **Status**: Currently Pursuing
+
+### Bachelor of Business Administration (BBA)
+* **Status**: Completed
+
+---
+
+## 🏆 Selected Professional Certifications
+
+- **Google** Digital Marketing & E-commerce Professional Certificate
+- **Google Analytics** Certification
+- **Google Ads** Certification
+- **HubSpot** Digital Marketing Certification
+- **HubSpot** Content Marketing Certification
+- **Meta** Social Media Marketing Certification
+
+---
+
+## 📁 Academic Projects Showcase
+
+### 📈 Digital Marketing Strategy Project
+* Conducted market research and competitor analysis.
+* Developed a mock digital marketing campaign covering search engine optimization, social media engagement, and paid advertising.
+* Proposed data-backed strategies to improve online brand visibility and customer interaction.
+
+### 📊 Marketing Research Project
+* Collected and analyzed primary consumer data using marketing research methodologies.
+* Prepared structured insights on consumer behavior and brand perception.
+* Presented key recommendations for enhancing customer satisfaction and loyalty.
+
+---
+
+## 📝 Marketing Blog & Client Insights
+This repository hosts a live blog showcasing industry insights on digital marketing trends, SEO tips, campaign analysis, and marketing automation.
+
+### ⚙️ Serverless CMS Dashboard
+The site is equipped with a private, client-side Content Management System (CMS) located at `/cms/`. This dashboard allows the portfolio owner to:
+1. Log in securely with their GitHub credentials.
+2. Draft new articles in Markdown with a live HTML preview.
+3. Publish posts directly to the live portfolio site on GitHub Pages in under 30 seconds.
