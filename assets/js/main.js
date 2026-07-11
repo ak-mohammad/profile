@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile Nav Toggle
   const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const siteLogo = document.querySelector('.site-logo');
   
   if (mobileNavToggle && navLinks) {
     mobileNavToggle.addEventListener('click', () => {
@@ -16,21 +17,27 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.remove('active');
       });
     });
+
+    // Close mobile nav when clicking the logo
+    if (siteLogo) {
+      siteLogo.addEventListener('click', () => {
+        mobileNavToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    }
   }
 
-  // Header Scroll Effect
+  // Header Scroll Effect (Toggle class instead of inline styles)
   const header = document.querySelector('.site-header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.style.padding = '0.75rem 0';
-      header.style.backgroundColor = 'rgba(11, 15, 25, 0.9)';
-      header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
-    } else {
-      header.style.padding = '1.25rem 0';
-      header.style.backgroundColor = 'rgba(11, 15, 25, 0.7)';
-      header.style.boxShadow = 'none';
-    }
-  });
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
 
   // Dynamic Scroll Spy for Navigation Links
   const sections = document.querySelectorAll('section[id]');
@@ -38,17 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     let current = '';
+    const scrollY = window.scrollY || window.pageYOffset;
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - 150) {
+      if (scrollY >= sectionTop - 150) {
         current = section.getAttribute('id');
       }
     });
 
     navItems.forEach(item => {
       item.classList.remove('active');
-      if (item.getAttribute('href').includes(current) && current !== '') {
+      const href = item.getAttribute('href');
+      if (href && href.includes(current) && current !== '') {
         item.classList.add('active');
       }
     });

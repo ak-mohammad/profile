@@ -1,7 +1,7 @@
 title: Mohammad Ammar
 email: youremail@example.com
 description: "MBA Candidate | Marketing & Digital Marketing Specialist. Skilled in SEO, SEM, Brand Management, and Digital Strategy."
-baseurl: "/profile"
+baseurl: ""
 url: "https://ak-mohammad.github.io"
 
 
@@ -20,7 +20,6 @@ author:
   name: Mohammad Ammar
   title: MBA Candidate | Marketing & Digital Marketing Specialist
   phone: "+91-XXXXXXXXXX"
-  email: "youremail@example.com"
+  email: "mdammar6000@gmail.com"
   location: "Noida, India"
-  github: "yourprofile"
-  linkedin: "yourprofile"
+  github: "ak-mohammad"
