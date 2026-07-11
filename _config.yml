@@ -1,0 +1,25 @@
+title: Mohammad Ammar
+email: youremail@example.com
+description: "MBA Candidate | Marketing & Digital Marketing Specialist. Skilled in SEO, SEM, Brand Management, and Digital Strategy."
+baseurl: ""
+url: ""
+
+# Jekyll settings
+markdown: kramdown
+permalink: /blog/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - plan.md
+
+# Custom variables for portfolio
+author:
+  name: Mohammad Ammar
+  title: MBA Candidate | Marketing & Digital Marketing Specialist
+  phone: "+91-XXXXXXXXXX"
+  email: "youremail@example.com"
+  location: "Noida, India"
+  github: "yourprofile"
+  linkedin: "yourprofile"

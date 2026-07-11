@@ -1,0 +1,58 @@
+---
+layout: default
+title: Blog Posts
+description: "Explore my thoughts on Marketing, Digital Marketing, Analytics, and Business Development."
+---
+<section class="section page-section">
+  <div class="container">
+    <header class="blog-header">
+      <h1 class="page-title">Blog Archive</h1>
+      <p style="max-width: 600px; margin: 1rem auto 0; color: var(--text-secondary);">
+        A collection of my thoughts, tutorials, and analysis in marketing technology, content strategy, and business growth.
+      </p>
+    </header>
+
+    <div class="blog-grid" style="margin-top: 4rem;">
+      {% for post in site.posts %}
+        <article class="glass-card blog-card">
+          <div>
+            <div class="blog-card-meta">
+              <span>{{ post.date | date: "%B %d, %Y" }}</span>
+              <span>•</span>
+              <span>
+                {% assign words = post.content | number_of_words %}
+                {% if words < 360 %}
+                  1 min read
+                {% else %}
+                  {{ words | divided_by: 180 }} min read
+                {% endif %}
+              </span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              {% if post.description %}
+                {{ post.description }}
+              {% else %}
+                {{ post.content | strip_html | truncatewords: 30 }}
+              {% endif %}
+            </p>
+          </div>
+          <a href="{{ post.url | relative_url }}" class="blog-card-link" style="margin-top: 1.5rem;">
+            Read Full Article 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+      {% else %}
+        <div class="glass-card" style="grid-column: 1 / -1; text-align: center; padding: 6rem;">
+          <h3>No articles published yet</h3>
+          <p style="margin-top: 1rem; margin-bottom: 2rem;">
+            No blog posts were found. Write some articles in the CMS and deploy them to see them here!
+          </p>
+          <a href="{{ '/' | relative_url }}" class="btn btn-primary">&larr; Back to Portfolio</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
