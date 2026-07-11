@@ -1,8 +1,9 @@
 title: Mohammad Ammar
 email: youremail@example.com
 description: "MBA Candidate | Marketing & Digital Marketing Specialist. Skilled in SEO, SEM, Brand Management, and Digital Strategy."
-baseurl: ""
-url: ""
+baseurl: "/Mohammad-Ammar"
+url: "https://ak-mohammad.github.io"
+
 
 # Jekyll settings
 markdown: kramdown
