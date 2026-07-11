@@ -196,7 +196,7 @@ layout: default
     
     <div class="blog-grid">
       {% for post in site.posts limit:3 %}
-        <article class="glass-card blog-card">
+        <article class="glass-card blog-card" onclick="window.location.href='{{ post.url | relative_url }}'">
           <div>
             <div class="blog-card-meta">
               <span>{{ post.date | date: "%b %d, %Y" }}</span>

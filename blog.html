@@ -15,7 +15,7 @@ description: "Explore my thoughts on Marketing, Digital Marketing, Analytics, an
 
     <div class="blog-grid" style="margin-top: 4rem;">
       {% for post in site.posts %}
-        <article class="glass-card blog-card">
+        <article class="glass-card blog-card" onclick="window.location.href='{{ post.url | relative_url }}'">
           <div>
             <div class="blog-card-meta">
               <span>{{ post.date | date: "%B %d, %Y" }}</span>
